@@ -1,0 +1,9 @@
+<!--pages/sence/index.wxml-->
+
+
+<view class="title">功能暂未开发</view>
+
+<view class='imagesize'>
+  <image src="http://m.qpic.cn/psc?/V51RUTOJ1gPakA2XieQR3DM0RG2QrOYn/45NBuzDIW489QBoVep5mcUkH3gFrZ9dCfe2Tzl7bhusXIaMvm.okdnGWYvFTnMZJ25fs.HA2lGQRhrFHhdwssR2HoGM8Qxb2Mx2BD0md0NA!/b&bo=4AHgAQAAAAADFzI!&rf=viewer_4" class='in-image' >
+  </image>
+</view>

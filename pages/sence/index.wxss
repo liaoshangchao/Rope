@@ -1,0 +1,21 @@
+/* pages/sence/index.wxss */
+
+/* 里的参数 */
+
+.title{
+  display:flex;
+  justify-content: center; 
+  font-size: xx-large;
+}
+
+.imagesize{
+  display:flex;
+  height: 600px;                    
+  justify-content: center;        
+  align-items:center;        
+}
+
+.imagesize image { 
+  width:480rpx;
+  height:480rpx;
+}

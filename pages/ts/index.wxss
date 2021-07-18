@@ -1,0 +1,144 @@
+/**页面背景样式**/
+.common-panel-backgroud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+	height: 100%;
+	background-color: #27c3d9;
+}
+
+.fImage{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #232A2C;
+}
+
+.control-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+.device-onLine-tip {
+  font-size: x-small;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+  padding-top: 62rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+
+}
+.count-box {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.count-box-value {
+  font-size: 160rpx;
+  font-family: 'DIN Condensed';
+  color: #0DB178;
+}
+.count-box-unit {
+  color: #FF0000;
+  margin-left: 24rpx;
+}
+.count-tip {
+  color: #000000;
+  font-size: 32rpx;
+  margin-top: -10rpx;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 48rpx;
+  box-sizing: border-box;
+}
+.anniuitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 8rpx;
+  box-sizing: border-box;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-value {
+  font-size: 22pt;
+  font-family: 'DIN Condensed';
+  color: #FF0000;
+}
+.item-label {
+  color: #000000;
+  margin-top: 4pt;
+}
+.mode-box {
+  margin-top: 72rpx;
+}
+.mode-item {
+  display: flex;
+  flex-direction: row;
+  width: 670rpx;
+  height: 172rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 32rpx;
+  background-color: #fff;
+  padding: 40rpx;
+  box-sizing: border-box;
+  margin-bottom: 24rpx;
+}
+.mode-item-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon {
+  width: 92rpx;
+  height: 92rpx;
+}
+.mode-item-title {
+  color:#000000;
+  font-size: 24;
+  font-weight: 500;
+  margin-left: 50rpx;
+}
+.mode-item-arrow {
+  color: #76787A;
+  font-size: 40rpx;
+}
+.popupmain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60rpx;
+}
+.popupitem{
+  margin-top: 24rpx;
+}

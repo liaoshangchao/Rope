@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home_center/device_list/index",
+    "pages/home_center/common_panel/index",
+    "pages/home_center/device_manage/index",
+    "pages/function_center/device_connect/index",
+    "pages/web_view/index",
+    "pages/base_function/index",
+    "pages/ts/index",
+    "pages/sence/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home_center/device_list/index",
+        "iconPath":"/image/Divece_OFF.png",
+        "selectedIconPath": "/image/Divece_ON.png",
+        "text": "设备列表"
+      },
+      {
+        "pagePath": "pages/sence/index",
+        "iconPath":"/image/Sence_OFF.png",
+        "selectedIconPath": "/image/Sence_ON.png",
+        "text": "场景"
+      },
+      {
+        "pagePath": "pages/base_function/index",
+        "iconPath":"/image/Fuction_OFF.png",
+        "selectedIconPath": "/image/Fuction_ON.png",
+        "text": "基础功能"
+      }
+
+      ],
+    "color": "0x000000",
+    "selectedColor": "0x1afa29"
+  },
+  "plugins": {
+    "tuya-ap-plugin": {
+      "version": "3.3.24",
+      "provider": "wxd2aa51ffacc3ff86"
+    }
+  },
+  "permission": {
+    "scope.userLocation": { "desc": "你的位置信息将用于家庭位置、天气、智能、设备等功能的使用" }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,65 @@
+<image class="common-panel-backgroud" src="http://m.qpic.cn/psc?/V51RUTOJ1gPakA2XieQR3DM0RG2QrOYn/45NBuzDIW489QBoVep5mcSzfQa68XyPVIXEe0m69CsytPndCTI71X.kzfxiqEpeAIf4KMHBFOAYiC.brVrurvobCHq2gR5owLo6*9xwnwBg!/b&bo=OARwCDgEcAgBGT4!&rf=viewer_4" />
+<View class="wrap">
+  <navbar device_name="{{device_name}}" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
+  <view class="control-box">
+    <view class="container">
+      <view class="content">
+        <view class="count-box">
+          <view class="count-box-unit">目标</view>
+          <view class="count-box-value">{{titlevalue}}</view>
+          <view class="count-box-unit">  {{titletext}}</view>
+        </view>
+        <view class="items">
+          <view class="item">
+            <view class="item-value">{{valueOne}}</view>
+            <view class="item-label">{{textOne}}</view>
+          </view>
+          <view class="item">
+            <view class="item-value">{{valueTwo}}"</view>
+            <view class="item-label">{{textTwo}}</view>
+          </view>
+          <view class="item">
+            <view class="item-value">{{valueThr}}</view>
+            <view class="item-label">{{textThr}}</view>
+          </view>
+        </view>
+        <view class="mode-box">
+          <view bind:tap="connect" class="mode-item">
+            <view class="mode-item-left">
+              <image class="fImage" src="http://m.qpic.cn/psc?/V51RUTOJ1gPakA2XieQR3DM0RG2QrOYn/45NBuzDIW489QBoVep5mcZ7UQve14e8Yg63PkScb94IPGfEzkCPpEJ3M6quaZPOWwLPZW*ERNuuUaRBAWzYh7hzJARN2egfnXML39wb7fRc!/b&bo=yADIAMgAyAADGTw!&rf=viewer_4"></image>
+              <view class="mode-item-title">连接蓝牙</view>
+            </view>
+          </view>
+          <view bind:tap="sendModCount" class="mode-item">
+            <view class="mode-item-left">
+              <image class="fImage" src="http://m.qpic.cn/psc?/V51RUTOJ1gPakA2XieQR3DM0RG2QrOYn/45NBuzDIW489QBoVep5mcZ7UQve14e8Yg63PkScb94Lg34AjaGOlBS0putomKOdy9W8iqtoVrUP9PthBwlAMAyTZJlR9NgD0V4vn27bXVV0!/b&bo=yADIAMgAyAADGTw!&rf=viewer_4"></image>
+              <view class="mode-item-title">计数训练</view>
+            </view>
+          </view>
+          <view bind:tap="sendModTime" class="mode-item">
+            <view class="mode-item-left">
+              <image class="fImage" src="http://m.qpic.cn/psc?/V51RUTOJ1gPakA2XieQR3DM0RG2QrOYn/45NBuzDIW489QBoVep5mceRpQvqTHBm8MOBC58W5UoZpE*OQCjbP9UTdCD4pRd96Erlb3s6RSc74AtoRz*AsJ63Z5D4C50iCyZgofYCc*7E!/b&bo=yADIAMgAyAADGTw!&rf=viewer_4"></image>
+              <view class="mode-item-title">计时训练</view>
+            </view>
+          </view>
+          <view class="mode-item">
+            <view class="anniuitems">
+              <van-button class="item" bind:click="sendtsStart" icon="play" color="#a0a0a0" type="info">开始</van-button>
+              <van-button class="item" bind:click="sendtsStop" icon="pause" color="#a0a0a0" type="info">{{tsPauseText}}</van-button>
+              <van-button class="item" bind:click="tsstop" icon="stop" color="#a0a0a0" type="info">结束</van-button>
+            </view>
+           </view> 
+        </view>
+      </view>
+    </view>
+    <van-popup show="{{ PopCountshow }}" closeable round position="bottom" custom-style="height: 20%" bind:close="onPopCountClose">
+      <view class="popupmain">
+        <van-stepper class="popupitem" value="{{ PopCountvalue }}" bind:change="onCountChange" />
+        <van-button class="popupitem" bind:click="PopCountConfim" plain hairline type="info">确 定</van-button>
+      </view>
+    </van-popup>
+    <van-popup show="{{ PopTimeshow }}" round position="bottom" bind:close="onPopTimeClose">
+      <van-picker show-toolbar title="选择时长 分 秒" columns="{{ Timecolumns }}" bind:cancel="onPopTimeCancel" bind:confirm="onPopTimeConfirm" />
+    </van-popup>
+  </view>
+</View>
